@@ -1,6 +1,6 @@
 # Predicting-which-stocks-will-beat-SPY-with-TA
 - In this project, I create 3 models: 1 linear regression model, 1 time series model and 1 ensemble model. They will all predict which stocks of the S&amp;P100 will beat SPY by at least 10% in 1 year. The models will be trained with stock price, simple moving averages and candle sticks represented mathematically. 
-## Title: "Predicting Outperforming S&P 500 Stocks using Close Price and Technical Analysis Indicators"
+## Title: "Predicting Outperforming S&P 100 Stocks using Close Price and Technical Analysis Indicators"
 ## Introduction:
 - The S&P 100 index is considered to be by some the gold standard benchmark for the stock market performance in the United States. However, not all stocks in the index perform equally well. Some stocks will inevitable outperform others. In this project, 3 machine learning models will be build. They will use stock price and technical analysis indicators to predict which stocks in the S&P 100 will beat the index by 10% or more in one year. By identifying these outperforming stocks, investors can potentially achieve higher returns.
 ## Data collection:
