@@ -37,6 +37,9 @@
 ['ABBV', 'AMGN', 'BA', 'BMY', 'BRK-B', 'CAT', 'CL', 'DUK', 'EMR', 'EXC', 'GILD', 'HON', 'IBM', 'JNJ', 'KHC', 'KO', 'LIN', 'MCD', 'MET', 'MO', 'MRK', 'ORCL', 'PEP', 'PG', 'PM', 'WMT']
 
 - Ensemble method
+- Stocks that beat SPY from 2021-12-31 to 2022-12-31: ['GE', 'GM', 'CSCO', 'BA', 'GILD', 'BMY', 'CVS', 'COP', 'CRM', 'BKNG', 'CL', 'DOW', 'CHTR', 'XOM', 'CMCSA', 'DUK', 'AXP', 'EMR', 'EXC', 'BAC', 'F', 'COF', 'C', 'DIS', 'CVX', 'AMZN', 'NVDA', 'ADBE', 'ORCL', 'PFE', 'PM', 'PYPL', 'QCOM', 'RTX', 'SBUX', 'SCHW', 'SO', 'WFC', 'ABT', 'T', 'TGT', 'TMUS', 'TSLA', 'WBA', 'TXN', 'UPS', 'USB', 'AAPL', 'SPG', 'NKE', 'NEE', 'GOOGL', 'HON', 'INTC', 'JPM', 'KHC', 'WMT', 'KO', 'LLY', 'VZ', 'MS', 'AIG', 'MRK', 'MO', 'GOOG', 'META', 'AMD', 'MDT', 'MDLZ', 'BK', 'MET']
+- Stocks that the model predicted would beat SPY from 2021-12-31 to 2022-12-31:
+['GE', 'CRM', 'EMR', 'F', 'COF', 'T', 'GOOG', 'AMD']
 ## Overcoming difficulties
 - Information could not be collected until BRK.B was replaced with BRK-B in the tickers list.
 - Originally, the mid price (average of daily high and daily low) was to be used instead of the close for smoother data. But a regular home computer would already require multiple hours to collect the data that was to be collected, and so close price was used to reduce work load by as much as possible.
