@@ -50,3 +50,8 @@
 - The SVR model needed a Y, the future 1 year close price, but manually adding the future price of over 6000 rows of data was too much work to do. The future close price could not be the current close price shifted 12 rows down because the df had 101 stocks not just 1 stock. So a function was made to creates two new columns: - - - Future_1_year_close and Ticker2. It then populates them with the values from the Close and Ticker columns shifted 12 rows down, and if Ticker and Ticker2 was not equal, Future_1_year_close will be set to NaN. NaN would then be dropped.
 ## Future direction
 - Backtest theses machine learning models with equal weighted portfolios. Find out if the ensemble model really did perform the best.
+## Update
+- I created 3 equal weighted portfolios using the stock picks from each model and tested their performance from 2021-12-31 to 2022-12-31 when stocks were falling:
+- The regression (SVM) model net a 10.80% return  
+- The ensemble (random forest) model net a -27.75% return 
+- The time series model portfolio model net a 9.64% return 
