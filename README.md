@@ -6,10 +6,7 @@
 ## Data collection:
 - Information of all stocks in the S&P 100 will be collected in the past 5 years. Looking at all of the stocks of the S&P500 may be too much data for a home computer to handle. Specifically, we will collect close price, moving averages and candel sticks represented mathematically.
 ## Choice of model:
-- There are 3 popular machine learning models for stock prediction:
-    Time-series models
-    Regression models
-    Ensemble methods
+- There are 3 popular machine learning models for stock prediction: Time-series models, Regression models and Ensemble methods
 - All 3 types of models shall be explored, specifically a prophet time series model, a Support Vector Regression (SVR) model and a random forest model.
 - Time-series models, such as ARIMA or SARIMA, are useful for stock prediction as they are well-suited for predicting values based on historical patterns in time-series data. There is no reason why Prophet was used specifically.
 - SVR was chosen over linear regression because it has 2 advantages over linear regression in stock prediction.
