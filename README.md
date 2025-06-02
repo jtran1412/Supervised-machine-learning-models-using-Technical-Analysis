@@ -7,9 +7,9 @@
 - Information of all stocks in the S&P 100 will be collected in the past 5 years. Looking at all of the stocks of the S&P500 may be too much data for a home computer to handle. Specifically, we will collect close price, moving averages and candel sticks represented mathematically.
 ## Choice of model:
 - There are 3 popular machine learning models for stock prediction:
-- Time-series models
-- Regression models
-- Ensemble methods
+    Time-series models
+    Regression models
+    Ensemble methods
 - All 3 types of models shall be explored, specifically a prophet time series model, a Support Vector Regression (SVR) model and a random forest model.
 - Time-series models, such as ARIMA or SARIMA, are useful for stock prediction as they are well-suited for predicting values based on historical patterns in time-series data. There is no reason why Prophet was used specifically.
 - SVR was chosen over linear regression because it has 2 advantages over linear regression in stock prediction.
@@ -44,13 +44,13 @@
 - Information could not be collected until BRK.B was replaced with BRK-B in the tickers list.
 - Originally, the mid price (average of daily high and daily low) was to be used instead of the close for smoother data. But a regular home computer would already require multiple hours to collect the data that was to be collected, and so close price was used to reduce work load by as much as possible.
 - Monthly data was collected from pandas_ta because daily data took too long.
-- It was discovered that yfinance could quickly collect daily data, but by then all the features were already calculated with monthly data from pandas_ta. However, the daily data from yfinance was useful in building the time series model.
+- It was discovered late into the project that yfinance could quickly collect daily data, but by then all the features were already calculated with monthly data from pandas_ta. However, the daily data from yfinance was useful in building the time series model.
 - Instructions on how to build a time series trained with multiple features could not be found. So daily close price was used as the only feature.
 - The SVR model would not work initially. This was because Date needed to be converted into a meaningful number and Ticker which was not a number needed to be dropped.
 - The SVR model needed a Y, the future 1 year close price, but manually adding the future price of over 6000 rows of data was too much work to do. The future close price could not be the current close price shifted 12 rows down because the df had 101 stocks not just 1 stock. So a function was made to creates two new columns: - - - Future_1_year_close and Ticker2. It then populates them with the values from the Close and Ticker columns shifted 12 rows down, and if Ticker and Ticker2 was not equal, Future_1_year_close will be set to NaN. NaN would then be dropped.
 ## Future direction
-- Backtest theses machine learning models with equal weighted portfolios. Find out if the ensemble model really did perform the best.
-## Update
+- Backtest theses machine learning models with equal weighted portfolios.
+## Summary
 - I created 3 equal weighted portfolios using the stock picks from each model and tested their performance from 2021-12-31 to 2022-12-31 when stocks were falling:
 - The regression (SVM) model net a 10.80% return  
 - The ensemble (random forest) model net a -27.75% return 
